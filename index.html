@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kavinax Real state website</title>
+    <link rel="icon" type="x-icon" href="favicon.ico">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.43.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      html {
+  scroll-behavior: smooth;
+}
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            padding: {
+              DEFAULT: "1rem",
+              sm: "2rem",
+              lg: "6rem",
+              xl: "7rem",
+              "2xl": "6rem",
+            },
+          },
+          extend: {
+            backgroundImage: {
+        'reward': "url('reward.png')",
+       
+      },
+            colors: {
+              bg: {
+                DEFAULT: "#FF8B42",
+                200: "#272727",
+                300: "#2e2e2e",
+              },
+              primary: {
+                DEFAULT: "#010F58",
+              
+              },
+              secondary: {
+                DEFAULT: "#FF5017",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    </style>
+  </head>
+  <body style="font-family: 'Poppins', sans-serif">
+    <!-- Social Links -->
+    <div class="bg-primary">
+        <div class="container mx-auto flex justify-between items-center py-4">
+          <div class="flex items-center gap-5">
+<div class="flex gap-2 items-center">
+<img src="location.svg" alt="location">
+<p class="text-white text-base font-medium">7124 Landmark Tower,New York</p>
+</div>
+<div class="flex gap-2 items-center">
+  <img src="email.svg" alt="location">
+  <p class="text-white text-base font-medium">support@yourdomain.com</p>
+  </div>
+  <div class="flex gap-2 items-center">
+    <img src="call.svg" alt="location">
+    <p class="text-white text-base font-medium">+61383766284</p>
+    </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <img src="fb.svg" alt="facebook">
+            <img src="insta.svg" alt="facebook">
+            <img src="twite.svg" alt="facebook">
+            <img src="linkend.svg" alt="facebook">
+            <img src="youtube.svg" alt="facebook">
+          </div>
+        </div>
+    </div>
+
+    <!-- Navbar Start from Here -->
+  
+    <div class=" ">
+      <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div class="relative flex items-center justify-between">
+          <a href="#" aria-label="Company" title="Company" class="inline-flex items-center">
+            <img class="h-12" src="logo.svg" alt="">
+           
+          </a>
+          <ul class=" items-center hidden space-x-8 lg:flex">
+         
+          <li class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-[#010f58]">Home</li>
+          <li class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-[#010f58]">About Us</li>
+          <li class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-[#010f58]">Property</li>
+           
+                        <li>
+              
+                          <button id="multiLevelDropdownButton" data-dropdown-toggle="dropdown" class=" text-base  font-medium  py-2.5 text-center inline-flex gap-1 items-center " type="button">Pages 
+                            <img src="down.svg" alt="">
+                          </button>
+                          <!-- Dropdown menu -->
+                          <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-500 shadow ">
+                              <ul class="py-1 text-sm  " aria-labelledby="multiLevelDropdownButton">
+                                <li>
+                                  <a href="#" class="block py-2 px-4 hover:bg-primary">Dashboard</a>
+                                </li>
+                                <li>
+                                  <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex justify-between items-center py-2 px-4 w-full hover:bg-primary">Dropdown<svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></button>
+                                    <div id="doubleDropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-700 shadow ">
+                                      <ul class="py-1 text-sm " aria-labelledby="doubleDropdownButton">
+                                        <li>
+                                          <a href="#" class="block py-2 px-4 hover:bg-primary">Overview</a>
+                                        </li>
+                                        <li>
+                                          <a href="#" class="block py-2 px-4 hover:bg-primary">My downloads</a>
+                                        </li>
+                                        <li>
+                                          <a href="#" class="block py-2 px-4 hover:bg-primary">Billing</a>
+                                        </li>
+                                        <li>
+                                          <a href="#" class="block py-2 px-4 hover:bg-primary">Rewards</a>
+                                        </li>
+                                      </ul>
+                                  </div>
+                                </li>
+                                <li>
+                                  <a href="#" class="block py-2 px-4 hover:bg-primary">Earning</a>
+                                </li>
+                                <li>
+                                  <a href="#" class="block py-2 px-4 hover:bg-primary">Dashboard</a>
+                                </li>
+                              </ul>
+                          </div>
+                          
+                                    </li>
+                                    <li class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-[#010f58]">Blog</li>
+                                    <li class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-[#010f58]">Contact</li>
+          </ul>
+          <ul class=" items-center hidden space-x-8 lg:flex">
+            <li class="flex gap-4 items-center">
+            <button class="btn bg-white text-primary border-none hover:bg-primary hover:text-white">Sign In</button>
+            <button class="btn bg-secondary border-none hover:bg-primary hover:text-white rounded-sm">Add Property</button>
+            </li>
+          </ul>
+      
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Hero Section -->
+
+    <div class="w-full relative">
+      <img class="w-full" src="hero.png" alt="">
+      <div class="absolute top-20 left-10 flex flex-col gap-10">
+        <p class="text-white font-semibold text-5xl">Discover Most <br>
+          Suitable Property</p>
+          <p class="text-white font-medium text-lg">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmt <br>
+            mod tempor incididunt ut labore et dolore magna aliqua.</p>
+       
+            
+<div class="mb-4 border-b border-gray-200 w-[550px]">
+  <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+      <li class="mr-2" role="presentation">
+          <button class="inline-block p-4 rounded-t-lg border-b-2" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+      </li>
+      <li class="mr-2" role="presentation">
+          <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 " id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Dashboard</button>
+      </li>
+      <li class="mr-2" role="presentation">
+          <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 " id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+      </li>
+      <li role="presentation">
+          <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 " id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Contacts</button>
+      </li>
+  </ul>
+</div>
+<div id="myTabContent">
+  <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+  </div>
+  <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+      <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+  </div>
+  <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+      <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+  </div>
+  <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+      <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+<!-- Steps -->
+
+<!-- Doctor’s Schedule -->
+
+<!-- Our Medical Care -->
+
+<!-- Rewards and rooms -->
+
+<!-- medical Expert -->
+
+
+<!-- feedback users -->
+
+
+<!-- upcoming events -->
+
+<!-- Subscribe Now  -->
+
+
+<!-- Footer Section -->
+  <div class="bg-[#273240]">
+      <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 py-10">
+          <div class="flex flex-col gap-6 items-start">
+              <img class="h-12" src="logofooter.svg" alt="footerlogo">
+              <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut cras velit senectus id tellus aliquam enim felis. Sed commodo cursus tellus sapien, viverra imperdiet morbi dignissim. Consequat in metus arcu eget.</p>
+              <div class="flex gap-4 items-center">
+                <a href="#">   <img class="cursor-pointer" src="twitter.svg" alt="twitter"> </a>
+                <a href="#">   <img class="cursor-pointer" src="linkedin.svg" alt="twitter"> </a>
+                <a href="#">   <img class="cursor-pointer" src="facebook.svg" alt="twitter"> </a>
+             
+              </div>
+          </div>
+          <div class="flex flex-col gap-3 items-start">
+            <p class="text-white font-medium text-2xl">Our Services</p>
+            <p class="text-white  text-base">Bills & Insurance</p>
+            <hr class=" border-gray-300 w-52">
+            <p class="text-white  text-base">Cancer Screening</p>
+            <hr class=" border-gray-300 w-52">
+            <p class="text-white  text-base">Cardiac Surgery</p>
+            <hr class=" border-gray-300 w-52">
+            <p class="text-white  text-base">Neurology</p>
+            <hr class=" border-gray-300 w-52">
+            <p class="text-white  text-base">Covid-19 Vaccine</p>
+            <hr class=" border-gray-300 w-52">
+          </div>
+          <div class="flex flex-col gap-6 items-start">
+            <p class="text-white font-medium text-2xl">Contact Us</p>
+            <div class="flex items-start gap-4">
+              <img src="locationfill.svg" alt="loacation">
+              <p class="text-white  text-base">1234 Uttara Khal Pahr, Image Osman Center,
+                Sonargao, Janapath</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img src="call.svg" alt="call">
+              <p class="text-white  text-base">+09876543211</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img src="email.svg" alt="email">
+              <p class="text-white  text-base">doctorguide@example.com</p>
+            </div>
+      
+          </div>
+          <div class="flex flex-col gap-6 items-start">
+            <p class="text-white font-medium text-2xl">Doctors Schedule</p>
+            <p class="text-white text-base">At vero eos et accusam et justou dolores et ea rebum tet clita kasd gubergren no sea takimata.</p>
+            <button class="btn bg-primary capitalize border-none hover:bg-[#0089BA] flex items-center gap-3">
+              <img src="vsew.svg" alt="view">
+              <p>View Schedule</p>
+            </button>
+          </div>
+      </div>
+      <hr class=" border-gray-300 w-full pt-7">
+      <div class="flex justify-between items-center container mx-auto py-7">
+        <p class="text-white">Copyright © 2022. All Rights Reserved. Made with  by Solutya.</p>
+        <div class="flex gap-4 items-center">
+          <p class="text-white">Latest news</p>
+          <p class="text-white">Privacy Policy  </p>
+          <p class="text-white"> Terms & Conditions</p>
+        </div>
+      </div>
+  </div>
+
+<!-- Back to top button -->
+<button
+  type="button"
+  data-mdb-ripple="true"
+  data-mdb-ripple-color="light"
+  class="inline-block p-3 bg-primary text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-secondary hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out   bottom-5 right-5 fixed"
+  id="btn-back-to-top"
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    data-prefix="fas"
+    class="w-4 h-4"
+    role="img"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 448 512"
+  >
+    <path
+      fill="currentColor"
+      d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+    ></path>
+  </svg>
+</button>
+
+<script>
+  // Get the button
+let mybutton = document.getElementById('btn-back-to-top');
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = 'block';
+  } else {
+    mybutton.style.display = 'none';
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener('click', backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+  <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+  </body>
+</html>
