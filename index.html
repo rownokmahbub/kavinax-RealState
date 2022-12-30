@@ -171,25 +171,34 @@
             mod tempor incididunt ut labore et dolore magna aliqua.</p>
        
             
-<div class="mb-4 border-b border-gray-200 w-[550px]">
-  <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
-      <li class="mr-2" role="presentation">
-          <button class="inline-block p-4 rounded-t-lg border-b-2" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+<div class=" w-[400px] bg-secondary border-b border-gray-200 text-white">
+  <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-white" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+      <li class="mr-2 text-white" role="presentation">
+          <button class="inline-block p-4 rounded-b-lg text-white focus:bg-white focus:text-secondary mb-1" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Sell</button>
       </li>
       <li class="mr-2" role="presentation">
-          <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 " id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Dashboard</button>
+          <button class="inline-block p-4 rounded-b-lg text-white focus:bg-white focus:text-secondary mb-1" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Rent</button>
       </li>
       <li class="mr-2" role="presentation">
-          <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 " id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+          <button class="inline-block p-4 rounded-b-lg text-white focus:bg-white focus:text-secondary mb-1" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Buy</button>
       </li>
-      <li role="presentation">
-          <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 " id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Contacts</button>
-      </li>
+    
   </ul>
 </div>
-<div id="myTabContent">
-  <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-      <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+<div id="myTabContent" class="bg-secondary -mt-10 w-[950px]">
+  <div class="hidden p-4 " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="flex items-center gap-10">
+        
+<label for="countries" class="block mb-2 text-sm font-medium ">Select an Location</label>
+<select id="countries" class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+  <option selected>Choose a country</option>
+  <option value="US">United States</option>
+  <option value="CA">Canada</option>
+  <option value="FR">France</option>
+  <option value="DE">Germany</option>
+</select>
+
+      </div>
   </div>
   <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
       <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
@@ -205,15 +214,457 @@
       </div>
     </div>
 
-<!-- Steps -->
+<!-- brows by Category -->
 
-<!-- Doctor’s Schedule -->
+<div class="container mx-auto py-20">
+  <div class="flex justify-between items-center">
+    <p class="text-5xl font-semibold text-primary">Browse By Categories</p>
+    <div class="flex items-center gap-4">
+      <img src="left.svg" alt="left arrow">
+      <img src="right.svg" alt="right arrow">
+    </div>
+  </div>
 
-<!-- Our Medical Care -->
+  <div class="grid grid-cols-3 gap-10 py-20">
+    <div class="flex gap-3">
+      <img src="ct1.png" alt="ct">
+      <div class="flex flex-col gap-4 items-start justify-center">
+        <p class="text-primary font-semibold  text-xl">Apartment</p>
+        <p>Lorem ipsum dolor sitam
+          consectetur elit.</p>
+          <p class="text-primary ">25 Property</p>
+      </div>
+    </div>
+      <div class="flex gap-3">
+        <img src="ct2.png" alt="ct">
+        <div class="flex flex-col gap-4 items-start justify-center">
+          <p class="text-primary font-semibold  text-xl">Duplex House</p>
+          <p>Lorem ipsum dolor sitam
+            consectetur elit.</p>
+            <p class="text-primary ">25 Property</p>
+        </div>
+      </div>
+      <div class="flex gap-3">
+        <img src="ct3.png" alt="ct">
+        <div class="flex flex-col gap-4 items-start justify-center">
+          <p class="text-primary font-semibold  text-xl">Office</p>
+          <p>Lorem ipsum dolor sitam
+            consectetur elit.</p>
+            <p class="text-primary ">30 Property</p>
+        </div>
+      </div>
+      
+  </div>
+ 
+</div>
+
+<!-- ABout us -->
+<div class="flex justify-between items-center px-10">
+  <img src="about.png" alt="about us">
+  <div class="flex flex-col gap-5">
+    <p class="text-primary font-semibold text-xl border-b-2 border-secondary w-28">About Us</p>
+    <p class="text-black text-5xl font-semibold">We Specialize In Quality <br>
+      Home Renovations</p>
+      <p class="text-gray-500">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br>
+        nulla pariatur excepteur Sint occaecat cupidatat non proident, sunt in culpa <br>
+        officia deserunt mollit anim id est laborum.</p>
+        <div class="flex items-center gap-4">
+          <img src="bluetik.svg" alt="tik">
+          <p class="text-xl font-semibold">Outstanding Property</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="bluetik.svg" alt="tik">
+          <p class="text-xl font-semibold">Provide The Best Services For Users</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="bluetik.svg" alt="tik">
+          <p class="text-xl font-semibold">Modern City Location & Ecceptional Lifestyle</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="bluetik.svg" alt="tik">
+          <p class="text-xl font-semibold">Professional & Experienced Human Resources</p>
+        </div>
+        <p class="text-gray-500">Nemo Enim Ipsam Voluptatem Quia Voluptas Sit Aspernatur Aut Odit Aut Fugit Sed <br>
+          Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt.</p>
+  </div>
+</div>
+
+<!--Watch video tutorials -->
+
+<div class="z-10">
+  <div class="  relative py-28">
+    <img class="absolute inset-0 object-cover w-full h-full" src="video.png" alt="video">
+    <div class="relative container mx-auto">
+      <img class="flex justify-center mx-auto py-16" src="play.svg" alt="">
+   <p class="text-white text-center font-semibold text-4xl">Watch Our Video Tutorial</p>
+
+    </div>
+  </div>
+ 
+</div>
 
 <!-- Rewards and rooms -->
 
-<!-- medical Expert -->
+<div class=" container mx-auto z-20 -mt-20">
+  <div class="bg-gray-300 flex justify-between items-center p-10 py-10">
+      <div class="flex flex-col gap-3">
+      <img src="list.svg" alt="">
+      </div>
+  </div>
+</div>
+
+<!--About Property  -->
+
+<div class="flex justify-between px-10 items-center py-28">
+  <img src="choose.png" alt="about us">
+  <div class="flex flex-col gap-5">
+    <p class="text-primary font-semibold text-xl border-b-2 border-secondary w-48">Find More Choose</p>
+    <p class="text-black text-5xl font-semibold">Why You Choose Our <br>
+      Kavinax Property</p>
+      <p class="text-gray-500">Excepteur Sint occaecat cupidatat non proident,sunt inculpk qui officia <br>
+        deserunt mollit anim id est laborum.sed do eiusmod..</p>
+        <div class="flex justify-between items-center">
+          <div>
+            <div class="flex items-center gap-4">
+              <img src="tik.svg" alt="tik">
+              <p class="text-xl font-semibold">Trusted By Thousands</p>
+            </div>
+            <p class="pt-2">Donec sit amet urna libero quisque <br>
+              efficitur nulla et odio hendrerit</p>
+          </div>
+          <div>
+            <div class="flex items-center gap-4">
+              <img src="tik.svg" alt="tik">
+              <p class="text-xl font-semibold">Private Security</p>
+            </div>
+            <p class="pt-2">Donec sit amet urna libero quisque <br>
+              efficitur nulla et odio hendrerit</p>
+          </div>
+        </div>
+        <div class="flex justify-between items-center">
+          <div>
+            <div class="flex items-center gap-4">
+              <img src="tik.svg" alt="tik">
+              <p class="text-xl font-semibold">Evaluate Property</p>
+            </div>
+            <p class="pt-2">Donec sit amet urna libero quisque <br>
+              efficitur nulla et odio hendrerit</p>
+          </div>
+          <div>
+            <div class="flex items-center gap-4">
+              <img src="tik.svg" alt="tik">
+              <p class="text-xl font-semibold">Find A Good Side</p>
+            </div>
+            <p class="pt-2">Donec sit amet urna libero quisque <br>
+              efficitur nulla et odio hendrerit</p>
+          </div>
+        </div>
+     
+          <div class="flex  gap-2 items-center btn bg-[#010f58] w-48 hover:bg-secondary border-none" >
+            <p class="text-white">Explore More</p>
+            <img src="details.svg" alt="">
+          </div>
+  </div>
+</div>
+
+<!-- property -->
+<div class="container mx-auto">
+  <p class="flex justify-center mx-auto font-semibold text-lg border-b-2 border-secondary w-44 py-3">Our Property</p>
+  <p class="text-center font-semibold text-3xl py-3">Our Explore Property</p>
+  <div class="grid grid-cols-3  gap-10 items-center py-10">
+  <div class="group">
+    <div class="bg-[#fcfcfc] rounded-lg group-hover:bg-primary flex flex-col justify-center items-center mx-auto relative px-3 py-2">
+      <div class="relative">
+        <div class="absolute top-3 left-0 w-full">
+          <div class="flex justify-between items-center  w-full">
+            <p class="text-white bg-primary px-2 py-1 rounded-r-md group-hover:bg-secondary">For Sell</p>
+            <div class="flex bg-primary rounded-full group-hover:bg-secondary px-2 py-2 mr-5">
+             <img src="love.svg" alt="">
+            </div>
+          </div>
+          
+        </div>
+          <img src="h1.png" alt="h1">
+      </div>
+   
+        <div class="space-y-3 px-3 group-hover:text-white py-3">
+          <div class="flex justify-between items-center">
+            <p class="text-lg font-medium">Ready Resort for Sell</p>
+            <p class="bg-secondary text-white px-3 ">2525.00$</p>
+          </div>
+        
+          <p>Duis aute irure dolor in reprehenderit into volupjl
+            tate velit esse cillum dolore eu fugiat.</p>
+          <hr>
+          <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                    <img src="bedfill.svg" alt="bed">
+                    <p>Beds : 3</p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img src="bathfill.svg" alt="bed">
+                  <p>Baths : 4</p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="parkingfill.svg" alt="bed">
+                <p>Parking : 1</p>
+            </div>
+          </div>
+          <hr>
+          <div class="flex justify-between items-center">
+            <p>View Details </p>
+            <img class="block group-hover:hidden cursor-pointer" src="detailsfill.svg" alt="">
+            <img  class="hidden group-hover:block cursor-pointer" src="details.svg" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+  
+  <div class="group">
+    <div class="bg-[#fcfcfc] rounded-lg group-hover:bg-primary flex flex-col justify-center items-center mx-auto relative px-3 py-2">
+      <div class="relative">
+        <div class="absolute top-3 left-0 w-full">
+          <div class="flex justify-between items-center  w-full">
+            <p class="text-white bg-primary px-2 py-1 rounded-r-md group-hover:bg-secondary">For Rent</p>
+            <div class="flex bg-primary rounded-full group-hover:bg-secondary px-2 py-2 mr-5">
+             <img src="love.svg" alt="">
+            </div>
+          </div>
+          
+        </div>
+          <img src="h2.png" alt="h1">
+      </div>
+   
+        <div class="space-y-3 px-3 group-hover:text-white py-3">
+          <div class="flex justify-between items-center">
+            <p class="text-lg font-medium">Office Space</p>
+            <p class="bg-secondary text-white px-3 ">2525.00$</p>
+          </div>
+        
+          <p>Duis aute irure dolor in reprehenderit into volupjl
+            tate velit esse cillum dolore eu fugiat.</p>
+          <hr>
+          <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                    <img src="bedfill.svg" alt="bed">
+                    <p>Beds : 3</p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img src="bathfill.svg" alt="bed">
+                  <p>Baths : 4</p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="parkingfill.svg" alt="bed">
+                <p>Parking : 1</p>
+            </div>
+          </div>
+          <hr>
+          <div class="flex justify-between items-center">
+            <p>View Details </p>
+            <img class="block group-hover:hidden cursor-pointer" src="detailsfill.svg" alt="">
+            <img  class="hidden group-hover:block cursor-pointer" src="details.svg" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="group">
+    <div class="bg-[#fcfcfc] rounded-lg group-hover:bg-primary flex flex-col justify-center items-center mx-auto relative px-3 py-2">
+      <div class="relative">
+        <div class="absolute top-3 left-0 w-full">
+          <div class="flex justify-between items-center  w-full">
+            <p class="text-white bg-primary px-2 py-1 rounded-r-md group-hover:bg-secondary">For Rent</p>
+            <div class="flex bg-primary rounded-full group-hover:bg-secondary px-2 py-2 mr-5">
+             <img src="love.svg" alt="">
+            </div>
+          </div>
+          
+        </div>
+          <img src="h3.png" alt="h1">
+      </div>
+   
+        <div class="space-y-3 px-3 group-hover:text-white py-3">
+          <div class="flex justify-between items-center">
+            <p class="text-lg font-medium">Office Space</p>
+            <p class="bg-secondary text-white px-3 ">2525.00$</p>
+          </div>
+        
+          <p>Duis aute irure dolor in reprehenderit into volupjl
+            tate velit esse cillum dolore eu fugiat.</p>
+          <hr>
+          <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                    <img src="bedfill.svg" alt="bed">
+                    <p>Beds : 3</p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img src="bathfill.svg" alt="bed">
+                  <p>Baths : 4</p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="parkingfill.svg" alt="bed">
+                <p>Parking : 1</p>
+            </div>
+          </div>
+          <hr>
+          <div class="flex justify-between items-center">
+            <p>View Details </p>
+            <img class="block group-hover:hidden cursor-pointer" src="detailsfill.svg" alt="">
+            <img  class="hidden group-hover:block cursor-pointer" src="details.svg" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="group">
+    <div class="bg-[#fcfcfc] rounded-lg group-hover:bg-primary flex flex-col justify-center items-center mx-auto relative px-3 py-2">
+      <div class="relative">
+        <div class="absolute top-3 left-0 w-full">
+          <div class="flex justify-between items-center  w-full">
+            <p class="text-white bg-primary px-2 py-1 rounded-r-md group-hover:bg-secondary">For Rent</p>
+            <div class="flex bg-primary rounded-full group-hover:bg-secondary px-2 py-2 mr-5">
+             <img src="love.svg" alt="">
+            </div>
+          </div>
+          
+        </div>
+          <img src="h3.png" alt="h1">
+      </div>
+   
+        <div class="space-y-3 px-3 group-hover:text-white py-3">
+          <div class="flex justify-between items-center">
+            <p class="text-lg font-medium">Office Space</p>
+            <p class="bg-secondary text-white px-3 ">2525.00$</p>
+          </div>
+        
+          <p>Duis aute irure dolor in reprehenderit into volupjl
+            tate velit esse cillum dolore eu fugiat.</p>
+          <hr>
+          <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                    <img src="bedfill.svg" alt="bed">
+                    <p>Beds : 3</p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img src="bathfill.svg" alt="bed">
+                  <p>Baths : 4</p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="parkingfill.svg" alt="bed">
+                <p>Parking : 1</p>
+            </div>
+          </div>
+          <hr>
+          <div class="flex justify-between items-center">
+            <p>View Details </p>
+            <img class="block group-hover:hidden cursor-pointer" src="detailsfill.svg" alt="">
+            <img  class="hidden group-hover:block cursor-pointer" src="details.svg" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+  
+  <div class="group">
+    <div class="bg-[#fcfcfc] rounded-lg group-hover:bg-primary flex flex-col justify-center items-center mx-auto relative px-3 py-2">
+      <div class="relative">
+        <div class="absolute top-3 left-0 w-full">
+          <div class="flex justify-between items-center  w-full">
+            <p class="text-white bg-primary px-2 py-1 rounded-r-md group-hover:bg-secondary">For Rent</p>
+            <div class="flex bg-primary rounded-full group-hover:bg-secondary px-2 py-2 mr-5">
+             <img src="love.svg" alt="">
+            </div>
+          </div>
+          
+        </div>
+          <img src="h5.png" alt="h1">
+      </div>
+   
+        <div class="space-y-3 px-3 group-hover:text-white py-3">
+          <div class="flex justify-between items-center">
+            <p class="text-lg font-medium">Office Space</p>
+            <p class="bg-secondary text-white px-3 ">2525.00$</p>
+          </div>
+        
+          <p>Duis aute irure dolor in reprehenderit into volupjl
+            tate velit esse cillum dolore eu fugiat.</p>
+          <hr>
+          <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                    <img src="bedfill.svg" alt="bed">
+                    <p>Beds : 3</p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img src="bathfill.svg" alt="bed">
+                  <p>Baths : 4</p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="parkingfill.svg" alt="bed">
+                <p>Parking : 1</p>
+            </div>
+          </div>
+          <hr>
+          <div class="flex justify-between items-center">
+            <p>View Details </p>
+            <img class="block group-hover:hidden cursor-pointer" src="detailsfill.svg" alt="">
+            <img  class="hidden group-hover:block cursor-pointer" src="details.svg" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="group">
+    <div class="bg-[#fcfcfc] rounded-lg group-hover:bg-primary flex flex-col justify-center items-center mx-auto relative px-3 py-2">
+      <div class="relative">
+        <div class="absolute top-3 left-0 w-full">
+          <div class="flex justify-between items-center  w-full">
+            <p class="text-white bg-primary px-2 py-1 rounded-r-md group-hover:bg-secondary">For Rent</p>
+            <div class="flex bg-primary rounded-full group-hover:bg-secondary px-2 py-2 mr-5">
+             <img src="love.svg" alt="">
+            </div>
+          </div>
+          
+        </div>
+          <img src="h6.png" alt="h1">
+      </div>
+   
+        <div class="space-y-3 px-3 group-hover:text-white py-3">
+          <div class="flex justify-between items-center">
+            <p class="text-lg font-medium">Office Space</p>
+            <p class="bg-secondary text-white px-3 ">2525.00$</p>
+          </div>
+        
+          <p>Duis aute irure dolor in reprehenderit into volupjl
+            tate velit esse cillum dolore eu fugiat.</p>
+          <hr>
+          <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                    <img src="bedfill.svg" alt="bed">
+                    <p>Beds : 3</p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img src="bathfill.svg" alt="bed">
+                  <p>Baths : 4</p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="parkingfill.svg" alt="bed">
+                <p>Parking : 1</p>
+            </div>
+          </div>
+          <hr>
+          <div class="flex justify-between items-center">
+            <p>View Details </p>
+            <img class="block group-hover:hidden cursor-pointer" src="detailsfill.svg" alt="">
+            <img  class="hidden group-hover:block cursor-pointer" src="details.svg" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="flex justify-center mx-auto bg-primary btn border-none rounded-none my-5 cursor-pointer w-52 hover:bg-secondary px-3 py-2">
+    <div class="flex gap-3 items-center">
+      <p class="text-white">View All Property</p>
+      <img src="details.svg" alt="">
+    </div>
+  </div>
+</div>
 
 
 <!-- feedback users -->
@@ -222,13 +673,39 @@
 <!-- upcoming events -->
 
 <!-- Subscribe Now  -->
+<div class="container mx-auto my-10 ">
+  <div class="relative rounded-lg overflow-hidden">
+    <img src="subscribe.png" class="absolute inset-0 object-cover w-full h-full" alt="" />
+    <div class="relative ">
+      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="flex flex-col items-center justify-center ">
+          <div class="w-full max-w-xl">
+            <h2 class=" text-center mb-6 font-sans mt-32 text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+              Subscribe For Newsletter 
+            </h2>
+            <p class="max-w-xl mb-4 text-base text-gray-400 md:text-lg text-center">
+              Be the first one to know  about discounts, offers and events. Unsubscribe whenever you like.
+            </p>
+          <div class="flex justify-between bg-white max-w-md px-2 py-2 mx-auto">
+            <input type="text" class="border-none" placeholder="enter your email">
+            <button class="btn bg-secondary border-none rounded-none ">Subscribe Now</button>
+          </div>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 <!-- Footer Section -->
   <div class="bg-[#273240]">
       <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 py-10">
           <div class="flex flex-col gap-6 items-start">
-              <img class="h-12" src="logofooter.svg" alt="footerlogo">
+              <img class="h-12" src="footerlogo.svg" alt="footerlogo">
               <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut cras velit senectus id tellus aliquam enim felis. Sed commodo cursus tellus sapien, viverra imperdiet morbi dignissim. Consequat in metus arcu eget.</p>
               <div class="flex gap-4 items-center">
                 <a href="#">   <img class="cursor-pointer" src="twitter.svg" alt="twitter"> </a>
