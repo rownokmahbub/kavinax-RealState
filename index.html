@@ -185,13 +185,13 @@
     
   </ul>
 </div>
-<div id="myTabContent" class="bg-secondary -mt-10 w-[950px]">
-  <div class="hidden p-4 " id="profile" role="tabpanel" aria-labelledby="profile-tab">
-      <div class="flex items-center gap-10">
+<div id="myTabContent" class="bg-secondary -mt-10 w-[990px]">
+  <div class="hidden p-4 flex gap-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="flex flex-col items-start w-44  gap-1">
         
-<label for="countries" class="block mb-2 text-sm font-medium ">Select an Location</label>
+<label for="countries" class="block mb-2 text-sm font-medium text-white">Type</label>
 <select id="countries" class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
-  <option selected>Choose a country</option>
+  <option selected>Property Type</option>
   <option value="US">United States</option>
   <option value="CA">Canada</option>
   <option value="FR">France</option>
@@ -199,16 +199,159 @@
 </select>
 
       </div>
+    
+              <div class="flex flex-col items-start w-48  gap-1">
+        
+                <label for="countries" class="block mb-2 text-sm font-medium text-white">Your Location</label>
+                <select id="countries" class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                  <option selected>Your Location</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                </select>
+                
+                      </div>
+                      <div class="flex flex-col items-start w-52  gap-1">
+        
+                        <label for="countries" class="block mb-2 text-sm font-medium text-white">Bed/Bathrooms</label>
+                        <select id="countries" class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                          <option selected class="text-xs">00 Bed / 00 Bathrooms</option>
+                          <option value="US">United States</option>
+                          <option value="CA">Canada</option>
+                          <option value="FR">France</option>
+                          <option value="DE">Germany</option>
+                        </select>
+                        
+                              </div>
+                              <div class="flex flex-col items-start w-48  gap-1">
+        
+                                <label for="countries" class="block mb-2 text-sm font-medium text-white">Price</label>
+                                <select id="countries" class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                                  <option selected>price</option>
+                                  <option value="US">100BDT</option>
+                                  <option value="CA">200BDT</option>
+                                  <option value="FR">400BDT</option>
+                                  <option value="DE">300BDT</option>
+                                </select>
+                                
+                                      </div>
+                              <div class="flex mt-8">
+                                  <input type="text" class="w-32 h-10" placeholder="search">
+                                  <img class="h-10" src="Search.svg" alt="search">
+                              </div>        
   </div>
-  <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-      <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+  <div class="hidden p-4 flex gap-4" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+    <div class="flex flex-col items-start w-44  gap-1">
+        
+      <label for="countries" class="block mb-2 text-sm font-medium text-white">Type</label>
+      <select id="countries" class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+        <option selected>Property Type</option>
+        <option value="US">United States</option>
+        <option value="CA">Canada</option>
+        <option value="FR">France</option>
+        <option value="DE">Germany</option>
+      </select>
+      
+            </div>
+          
+                    <div class="flex flex-col items-start w-48  gap-1">
+              
+                      <label for="countries" class="block mb-2 text-sm font-medium text-white">Your Location</label>
+                      <select id="countries" class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                        <option selected>Your Location</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                      </select>
+                      
+                            </div>
+                            <div class="flex flex-col items-start w-52  gap-1">
+              
+                              <label for="countries" class="block mb-2 text-sm font-medium text-white">Bed/Bathrooms</label>
+                              <select id="countries" class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                                <option selected class="text-xs">00 Bed / 00 Bathrooms</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                              </select>
+                              
+                                    </div>
+                                    <div class="flex flex-col items-start w-48  gap-1">
+              
+                                      <label for="countries" class="block mb-2 text-sm font-medium text-white">Price</label>
+                                      <select id="countries" class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                                        <option selected>price</option>
+                                        <option value="US">100BDT</option>
+                                        <option value="CA">200BDT</option>
+                                        <option value="FR">400BDT</option>
+                                        <option value="DE">300BDT</option>
+                                      </select>
+                                      
+                                            </div>
+                                    <div class="flex mt-8">
+                                        <input type="text" class="w-32 h-10" placeholder="search">
+                                        <img class="h-10" src="Search.svg" alt="search">
+                                    </div>    
   </div>
-  <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-      <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+  <div class="hidden p-4 flex gap-4" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+    <div class="flex flex-col items-start w-44  gap-1">
+        
+      <label for="countries" class="block mb-2 text-sm font-medium text-white">Type</label>
+      <select id="countries" class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+        <option selected>Property Type</option>
+        <option value="US">United States</option>
+        <option value="CA">Canada</option>
+        <option value="FR">France</option>
+        <option value="DE">Germany</option>
+      </select>
+      
+            </div>
+          
+                    <div class="flex flex-col items-start w-48  gap-1">
+              
+                      <label for="countries" class="block mb-2 text-sm font-medium text-white">Your Location</label>
+                      <select id="countries" class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                        <option selected>Your Location</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                      </select>
+                      
+                            </div>
+                            <div class="flex flex-col items-start w-52  gap-1">
+              
+                              <label for="countries" class="block mb-2 text-sm font-medium text-white">Bed/Bathrooms</label>
+                              <select id="countries" class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                                <option selected class="text-xs">00 Bed / 00 Bathrooms</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                              </select>
+                              
+                                    </div>
+                                    <div class="flex flex-col items-start w-48  gap-1">
+              
+                                      <label for="countries" class="block mb-2 text-sm font-medium text-white">Price</label>
+                                      <select id="countries" class="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                                        <option selected>price</option>
+                                        <option value="US">100BDT</option>
+                                        <option value="CA">200BDT</option>
+                                        <option value="FR">400BDT</option>
+                                        <option value="DE">300BDT</option>
+                                      </select>
+                                      
+                                            </div>
+                                    <div class="flex mt-8">
+                                        <input type="text" class="w-32 h-10" placeholder="search">
+                                        <img class="h-10" src="Search.svg" alt="search">
+                                    </div>    
   </div>
-  <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
-      <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-  </div>
+
 </div>
 
       </div>
@@ -286,6 +429,28 @@
         </div>
         <p class="text-gray-500">Nemo Enim Ipsam Voluptatem Quia Voluptas Sit Aspernatur Aut Odit Aut Fugit Sed <br>
           Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex  gap-2 items-center btn bg-[#010f58] w-48 hover:bg-secondary border-none" >
+              <p class="text-white">Explore More</p>
+              <img src="details.svg" alt="">
+            </div>
+            <div class="flex gap-2">
+                <img src="aboutuser.svg" alt="about">
+                <div class="space-y-1">
+                  <div class="flex">
+                    <p class="text-secondary font-semibold text-lg">David Smith</p>
+                    <p class=" text-lg">( CEO Of Kavinax Property )</p>
+                  </div>
+                  <div class="flex gap-3">
+                    <img src="callabout.svg" alt="sdsd">
+                    <div class="space-y-2">
+                      <p>Call For Booking Appointment</p>
+                      <p>Cell - <span class="text-secondary font-semibold">+43456575556</span></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
   </div>
 </div>
 
@@ -295,27 +460,38 @@
   <div class="  relative py-28">
     <img class="absolute inset-0 object-cover w-full h-full" src="video.png" alt="video">
     <div class="relative container mx-auto">
-      <img class="flex justify-center mx-auto py-16" src="play.svg" alt="">
-   <p class="text-white text-center font-semibold text-4xl">Watch Our Video Tutorial</p>
-
+      <img class="flex justify-center mx-auto py-6" src="play.svg" alt="">
+   <p class="text-white text-center font-semibold text-4xl mb-10">Watch Our Video Tutorial</p>
+   <div class=" container mx-auto z-20 absolute left-0 ">
+    <div class="bg-[#f8fafa] flex justify-between items-center p-10 py-10">
+        <div class="flex flex-col items-center gap-3">
+        <img src="list.svg" alt="">
+        <p class="text-primary font-semibold ">Properties Listed</p>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <img src="sold.svg" alt="">
+          <p class="text-primary font-semibold ">Properties Sold</p>
+          </div>
+          <div class="flex flex-col items-center gap-3">
+            <img src="clients.svg" alt="">
+            <p class="text-primary font-semibold ">Satisfied Clients</p>
+            </div>
+            <div class="flex flex-col items-center gap-3">
+              <img src="awards.svg" alt="">
+              <p class="text-primary font-semibold ">Realtor Awards</p>
+              </div>
+    </div>
+  </div>
     </div>
   </div>
  
 </div>
 
-<!-- Rewards and rooms -->
 
-<div class=" container mx-auto z-20 -mt-20">
-  <div class="bg-gray-300 flex justify-between items-center p-10 py-10">
-      <div class="flex flex-col gap-3">
-      <img src="list.svg" alt="">
-      </div>
-  </div>
-</div>
 
 <!--About Property  -->
 
-<div class="flex justify-between px-10 items-center py-28">
+<div class="flex justify-between px-10 items-center mt-64">
   <img src="choose.png" alt="about us">
   <div class="flex flex-col gap-5">
     <p class="text-primary font-semibold text-xl border-b-2 border-secondary w-48">Find More Choose</p>
@@ -1165,53 +1341,77 @@
              
               </div>
           </div>
-          <div class="flex flex-col gap-3 items-start">
+          <div class="flex flex-col gap-5 items-start">
             <p class="text-white font-medium text-2xl">Our Services</p>
-            <p class="text-white  text-base">Bills & Insurance</p>
-            <hr class=" border-gray-300 w-52">
-            <p class="text-white  text-base">Cancer Screening</p>
-            <hr class=" border-gray-300 w-52">
-            <p class="text-white  text-base">Cardiac Surgery</p>
-            <hr class=" border-gray-300 w-52">
-            <p class="text-white  text-base">Neurology</p>
-            <hr class=" border-gray-300 w-52">
-            <p class="text-white  text-base">Covid-19 Vaccine</p>
-            <hr class=" border-gray-300 w-52">
+            <div class="flex gap-2 items-center group">
+              <img class="hidden group-hover:block" src="arrowright.svg" alt="arrow">
+              <img class="block group-hover:hidden" src="arrowrightwhite.svg" alt="arrow">
+              <p class="text-white  text-base group-hover:text-secondary cursor-pointer">About Us</p>
+            </div>
+            <div class="flex gap-2 items-center group">
+              <img class="hidden group-hover:block" src="arrowright.svg" alt="arrow">
+              <img class="block group-hover:hidden" src="arrowrightwhite.svg" alt="arrow">
+              <p class="text-white  text-base group-hover:text-secondary cursor-pointer">Property</p>
+            </div>
+           
+            <div class="flex gap-2 items-center group">
+              <img class="hidden group-hover:block" src="arrowright.svg" alt="arrow">
+              <img class="block group-hover:hidden" src="arrowrightwhite.svg" alt="arrow">
+              <p class="text-white  text-base group-hover:text-secondary cursor-pointer">Our Agents</p>
+            </div>
+            <div class="flex gap-2 items-center group">
+              <img class="hidden group-hover:block" src="arrowright.svg" alt="arrow">
+              <img class="block group-hover:hidden" src="arrowrightwhite.svg" alt="arrow">
+              <p class="text-white  text-base group-hover:text-secondary cursor-pointer">Careers</p>
+            </div>
+            <div class="flex gap-2 items-center group">
+              <img class="hidden group-hover:block" src="arrowright.svg" alt="arrow">
+              <img class="block group-hover:hidden" src="arrowrightwhite.svg" alt="arrow">
+              <p class="text-white  text-base group-hover:text-secondary cursor-pointer">Contact</p>
+            </div>
+       
+          
           </div>
           <div class="flex flex-col gap-6 items-start">
+            <p class="text-white font-medium text-2xl">Recent Post</p>
+        <div class="flex gap-5 items-center">
+          <img src="f1.png" alt="">
+          <img src="f2.png" alt="">
+        </div>
+        <div class="flex gap-5 items-center">
+          <img src="f3.png" alt="">
+          <img src="f4.png" alt="">
+        </div>
+          </div>
+          <div class="flex flex-col gap-6 items-start text-white">
             <p class="text-white font-medium text-2xl">Contact Us</p>
-            <div class="flex items-start gap-4">
-              <img src="locationfill.svg" alt="loacation">
-              <p class="text-white  text-base">1234 Uttara Khal Pahr, Image Osman Center,
-                Sonargao, Janapath</p>
+         <div class="flex gap-3 items-center">
+            <img src="call.svg" alt="call">
+            <div class="space-y-1">
+              <p>Phone</p>
+              <p>+44 (0) 20 9994 7740</p>
             </div>
-            <div class="flex items-center gap-4">
-              <img src="call.svg" alt="call">
-              <p class="text-white  text-base">+09876543211</p>
-            </div>
-            <div class="flex items-center gap-4">
-              <img src="email.svg" alt="email">
-              <p class="text-white  text-base">doctorguide@example.com</p>
-            </div>
-      
+         </div>
+         <div class="flex gap-3 items-center">
+          <img src="email.svg" alt="call">
+          <div class="space-y-1">
+            <p>Phone</p>
+            <p>support@yourdomain.com</p>
           </div>
-          <div class="flex flex-col gap-6 items-start">
-            <p class="text-white font-medium text-2xl">Doctors Schedule</p>
-            <p class="text-white text-base">At vero eos et accusam et justou dolores et ea rebum tet clita kasd gubergren no sea takimata.</p>
-            <button class="btn bg-primary capitalize border-none hover:bg-[#0089BA] flex items-center gap-3">
-              <img src="vsew.svg" alt="view">
-              <p>View Schedule</p>
-            </button>
+       </div>
+       <div class="flex gap-3 items-center">
+        <img src="location.svg" alt="call">
+        <div class="space-y-1">
+          <p>Address</p>
+          <p>7124 Landmark Tower,New York</p>
+        </div>
+     </div>
           </div>
       </div>
       <hr class=" border-gray-300 w-full pt-7">
       <div class="flex justify-between items-center container mx-auto py-7">
         <p class="text-white">Copyright © 2022. All Rights Reserved. Made with  by Solutya.</p>
-        <div class="flex gap-4 items-center">
-          <p class="text-white">Latest news</p>
-          <p class="text-white">Privacy Policy  </p>
-          <p class="text-white"> Terms & Conditions</p>
-        </div>
+        <img src="Secure Payments.svg" alt="">
       </div>
   </div>
 
