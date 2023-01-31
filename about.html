@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About details || Kavinax RealState</title>
+    <link rel="icon" type="x-icon" href="favicon.ico">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.43.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      html {
+  scroll-behavior: smooth;
+}
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            padding: {
+              DEFAULT: "1rem",
+              sm: "2rem",
+              lg: "6rem",
+              xl: "7rem",
+              "2xl": "6rem",
+            },
+          },
+          extend: {
+            backgroundImage: {
+        'reward': "url('reward.png')",
+       
+      },
+            colors: {
+              bg: {
+                DEFAULT: "#FF8B42",
+                200: "#272727",
+                300: "#2e2e2e",
+              },
+              primary: {
+                DEFAULT: "#010F58",
+              
+              },
+              secondary: {
+                DEFAULT: "#FF5017",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    </style>
+  </head>
+ <body>
+    <div class="">
+         <!-- Social Links -->
+    <div class="bg-primary">
+      <div class="container mx-auto flex justify-between items-center py-4">
+        <div class="flex items-center gap-5">
+<div class="flex gap-2 items-center">
+<img src="location.svg" alt="location">
+<p class="text-white text-base font-medium">7124 Landmark Tower,New York</p>
+</div>
+<div class="flex gap-2 items-center">
+<img src="email.svg" alt="location">
+<p class="text-white text-base font-medium">support@yourdomain.com</p>
+</div>
+<div class="flex gap-2 items-center">
+  <img src="call.svg" alt="location">
+  <p class="text-white text-base font-medium">+61383766284</p>
+  </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="fb.svg" alt="facebook">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="insta.svg" alt="facebook">
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img src="twite.svg" alt="facebook">
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img src="linkend.svg" alt="facebook">
+          </a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="youtube.svg" alt="facebook">
+          </a>
+         
+        </div>
+      </div>
+  </div>
+
+  <!-- Navbar Start from Here -->
+
+ 
+  <div class=" ">
+    <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div class="relative flex items-center justify-between">
+        <a href="#" aria-label="Company" title="Company" class="inline-flex items-center">
+          <img class="h-12" src="logo.svg" alt="">
+         
+        </a>
+        <ul class=" items-center hidden space-x-8 lg:flex">
+       
+        <a href="index.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-[#010f58]">Home</a>
+        <a href="about.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-[#010f58]">About Us</a>
+        <a href="property.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-[#010f58]">Property</a>
+         
+                      <li>
+            
+                        <button id="multiLevelDropdownButton" data-dropdown-toggle="dropdown" class=" text-base  font-medium  py-2.5 text-center inline-flex gap-1 items-center " type="button">Pages 
+                          <img src="down.svg" alt="">
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-500 shadow ">
+                            <ul class="py-1 text-sm  " aria-labelledby="multiLevelDropdownButton">
+                              <li>
+                                <a href="#" class="block py-2 px-4 hover:bg-primary">Dashboard</a>
+                              </li>
+                              <li>
+                                <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex justify-between items-center py-2 px-4 w-full hover:bg-primary">Dropdown<svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></button>
+                                  <div id="doubleDropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-700 shadow ">
+                                    <ul class="py-1 text-sm " aria-labelledby="doubleDropdownButton">
+                                      <li>
+                                        <a href="#" class="block py-2 px-4 hover:bg-primary">Overview</a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="block py-2 px-4 hover:bg-primary">My downloads</a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="block py-2 px-4 hover:bg-primary">Billing</a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="block py-2 px-4 hover:bg-primary">Rewards</a>
+                                      </li>
+                                    </ul>
+                                </div>
+                              </li>
+                              <li>
+                                <a href="#" class="block py-2 px-4 hover:bg-primary">Earning</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block py-2 px-4 hover:bg-primary">Dashboard</a>
+                              </li>
+                            </ul>
+                        </div>
+                        
+                                  </li>
+                                  <li class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-[#010f58]">Blog</li>
+                                  <a href="contact.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-[#010f58]">Contact</a>
+        </ul>
+        <ul class=" items-center hidden space-x-8 lg:flex">
+          <li class="flex gap-4 items-center">
+          <a href="login.html" class="btn bg-white text-primary border-none hover:bg-primary hover:text-white">Sign In</a>
+          <a href="addproperty.html" class="btn bg-secondary border-none hover:bg-primary hover:text-white rounded-sm">Add Property</a>
+          </li>
+        </ul>
+    
+      </div>
+    </div>
+  </div>
+      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      
+        <div class="grid gap-12 row-gap-8 lg:grid-cols-2">
+          <div class="flex flex-col justify-center">
+            <div class="max-w-xl mb-6">
+              <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                We Specialize In Quality<br class="hidden md:block" />
+                Home Renovations
+                <span class="inline-block text-purple-400">Kavinax</span>
+              </h2>
+              <p class="text-base text-gray-700 md:text-lg">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
+              </p>
+            </div>
+            <div class="grid gap-8 row-gap-8 sm:grid-cols-2">
+              <div>
+                <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+                  <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                    <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                  </svg>
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">
+                  I'll be sure to note that in my log
+                </h6>
+                <p class="text-sm text-gray-900">
+                  Dingy I'm tellin' you rhubaahb Bangah Jo-Jeezly got in a gaum Powrtland stove up dooryahd
+                </p>
+              </div>
+              <div>
+                <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+                  <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                    <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                  </svg>
+                </div>
+                <h6 class="mb-2 font-semibold leading-5">
+                  Iterative approaches to corporate strategy
+                </h6>
+                <p class="text-sm text-gray-900">
+                  A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img class="object-cover w-full h-56 rounded shadow-lg sm:h-96" src="about.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+ </body>
+</html>
